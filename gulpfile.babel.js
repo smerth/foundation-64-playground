@@ -13,7 +13,7 @@ import webpackStream from 'webpack-stream';
 import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 
-import deploy from 'gulp-gh-pages';
+import ghPages from 'gulp-gh-pages';
 
 // var helpers = require('handlebars-helpers')();
 //=> returns object with all (130+) helpers
