@@ -3,6 +3,10 @@
     <li {{#ifpage 'index'}}class="is-active"{{/ifpage}}>
       <a href="{{root}}">HOME</a>
     </li>
+    
+    <li class="{{#ifpage page}}is-active{{/ifpage}}"><a href="{{root}}/foundation-pages/js-mixitup-hsk-data.html" class="" title="{{description}}">MixItUp With Data</a></li>
+
+
     {{#each foundation_pages_menu.data}}
     <li>
         <a href="#" title="{{description}}">{{category}}</a>
