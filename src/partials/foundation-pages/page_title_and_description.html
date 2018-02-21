@@ -1,0 +1,14 @@
+<div class="grid-container">
+  <div class="grid-x grid-margin-x grid-padding-x">
+    <aside class="cell callout success page-title-description">
+      {{#each foundation_pages_menu.data}}
+      {{#each items}}
+      {{#ifpage page}}
+      <h1>{{linkname}}</h1>
+      <p>{{description}}</p>
+      {{/ifpage}}
+      {{/each}}
+      {{/each}}
+    </aside>
+  </div>
+</div>

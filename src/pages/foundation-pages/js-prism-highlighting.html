@@ -1,0 +1,566 @@
+---
+layout: foundation-page
+---
+
+<div class="grid-container">
+  <div class="grid-x">
+        <article class="cell">
+{{#markdown}}
+
+# Prism Code Highlighting Test Page
+
+## Language Support in Code Fences
+
+I like to write in markdown using Typora. Typora supports code highlighting for a wide range range of languages and uses Github's convenient code fencing using three back-ticks.  I find Typora's shortcuts convenient as well.
+
+The `{{#markdown}}...{{/markdown}}` helper in Panini converts markdown code blocks into markup of the form `<pre><code class="lang-xxx">` which is pretty standard.
+
+Prism.js takes that markup and highlights the code blocks. 
+
+Pretty much any language you want to write in is highlighted in Typora and handled by Prism.js
+
+
+
+## Say ‘Hello World’ in 28 Different Programming Languages
+
+
+Computers are dumb. They only do what they’re told. How do you tell a computer what to do? You use a programming language. The very first thing you’ll do when learning a new programming language is how to make the computer display “Hello, World”.
+
+There is no perfect programming language, they all offer something a little different, and there are hundreds of programming languages with new ones being created every day.
+
+Here is a selection of programming languages that have a place in the programming hall of fame. They’re all either used today or have contributed something to the art of computer languages.
+
+
+
+### AppleScript
+
+If you’re on a Mac you can use this to automate and customise your applications.
+
+```applescript
+say "Hello, world!"
+```
+
+### Bash (Unix Shell)
+
+Used to interact with and manage Linux and Unix system at the command line.
+
+```bash
+#!/bin/bash
+STR="Hello World!"
+echo $STR
+```
+
+### BASIC
+
+Basic was first released in 1964 and reached its heyday in the early 80s, when computers were starting to enter the small office and the home. You were expected to write your own software and the large majority of computers shipped with some version of BASIC. It hit the sweet spot of being easy to learn but lean enough to run on this underpowered hardware.
+
+There are a huge number of BASIC variants, Visual Basic was a variation that was very popular on Windows in the 90s. This was replaced by Visual Basic .NET (now called just Visual Basic) but was quite different from the earlier versions. Visual Basic is still widely used.
+
+```basic
+10 PRINT "Hello, World!"
+20 END
+```
+
+### C
+
+The most important language in the world. It’s what operating systems like Windows, MacOS, iOS, and Android are written in, as well as browsers and 3D games engines. Its syntax has influenced countless other programming languages.
+
+C maps closely to Assembly Language but you can write more complex programmes with it. If you need the highest performance possible without losing your mind then C is for you.
+
+C is also the language that made “Hello, World” examples popular.
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    printf("hello, world\n");
+}
+```
+
+### C++
+
+Has performance close to C and is used in many important projects like the Chrome Browser. C++ was an effort to make a language that was easier to build large projects with while still being fast and efficient.
+
+```c++
+#include <iostream>
+
+int main()
+{
+    std::cout << "Hello, world!\n";
+    return 0;
+}
+```
+
+### C#
+
+Created when Microsoft built their .Net virtual machine. C# has become Microsoft premier programming language.
+
+```c#
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, world!");
+    }
+}
+```
+
+### Caml (Ocaml)
+
+A functional programming focused language in the ML family of languages. It’s used for a number of smaller projects at Facebook. The compiler for Facebook’s Hack language was written in OCaml.
+
+```ocaml
+print_endline "Hello, world!";;
+```
+
+### CoffeeScript
+
+An effort to make JavaScript better to work with.
+
+```coffeescript
+console.log "Hello, World!"
+```
+
+### Dart
+
+A language for building client-side software that can run on phones and browsers. Google is using Dart in some of its most important projects.
+
+```dart
+main() {
+  print('Hello World!');
+}
+```
+
+### Delphi
+
+Delphi was really a rapid application development (RAD) tool that used the Object Pascal language. In the mid- to late 90s, it was beloved by many programmers for writing Windows programmes. It’s no longer used, but still loved.
+
+```pascal
+procedure TForm1.ShowAMessage;
+begin
+  ShowMessage('Hello World!');
+end;
+```
+
+### Eiffel
+
+The language goes hand-in-hand with a way of writing software called the Eiffel Method. Eiffel introduced the concept of “design by contract” which is now used in many other languages.
+
+```eiffel
+class
+    HELLO_WORLD
+create
+    make
+feature
+    make
+        do
+            print ("Hello, world!%N")
+        end
+end
+```
+
+### Erlang
+
+Designed to work in a distributed way to provide real-time processing and high availability. Popular for phone systems but not well-know until it was used for CouchDB, the project that was the catalyst for the NoSQL movement.
+
+```erlang
+ -module(hello).
+ -export([hello_world/0]).
+
+ hello_world() -> io:fwrite("hello, world\n").
+```
+
+### Elixir
+While Erlang is great at a technical level, programmers find it hard to work with. Elixir uses Erlang’s technology while providing an easier experience for programmers.
+
+```elixir
+IO.puts "Hello World!"
+```
+
+### F#
+A functional focused programming language that runs on the .NET framework.
+
+```F#
+open System
+Console.WriteLine("Hello World!")
+```
+
+### Fortran
+
+Created in the 1950s to run on mainframe computers, it’s well suited for numerical and scientific work. It became standard in the scientific world where it’s still used today.
+
+```fortran
+program helloworld
+     print *, "Hello world!"
+end program helloworld
+```
+
+### Go
+
+Go was created and used at Google. It’s a practical language that focuses on programmer productivity with a community focused on performance and low latency.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World")
+}
+```
+
+### Groovy (Ruby)
+
+A dynamically typed scripting language that runs in the Java runtime. Most Java code would also run as Groovy code but Groovy code can be more compact as it doesn’t require everything that Java does.
+
+```groovy
+println "Hello World"
+```
+
+### Haskell
+
+A strongly-typed, purely functional programming language.
+
+```haskell
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello, World!"
+```
+
+
+### Java
+
+Something that made Java special is that it was designed so you could write code once and then allow it to run on any operation system. Java is the most popular programming language in the world. It’s used to teach students and in large companies. All Android apps are written in Java.
+
+```java
+class HelloWorldApp {
+    public static void main(String[] args) {
+        System.out.println("Hello World!"); // Prints the string to the console.
+    }
+}
+```
+
+### JavaScript (ECMAScript)
+
+JavaScript is the most commonly found programming language in the world. Mainly because it is required to be in every web browser. JavaScript is what makes the web dynamic and interactive. It was standardised under the name ECMAScript.
+
+```javascript
+console.log("Hello World!");
+```
+
+### Lua
+
+What makes Lua great is how easy it is to embed into software.
+
+```lua
+print("Hello World!")
+```
+
+### MATLAB
+
+A combination of a programme and a language. Used to analyse data and develop algorithms. It’s used in education to teach linear algebra and numerical analysis. It’s also popular with scientists doing work with image manipulation.
+
+```matlab
+classdef hello
+    methods
+        function greet(this)
+            disp('Hello, World')
+        end
+    end
+end
+```
+
+### Node.js
+
+Not so much a language (the language used is JavaScript) but a runtime environment to run JavaScript on servers as opposed to browsers. The goal was to demonstrate that asynchronous programming was better for modern multi-core CPUs. It now gets used a great deal for tooling of large front-end projects.
+
+```javascript
+console.log("Hello World!");
+```
+
+### Objective-C
+
+An extension of C that adds Smalltalk like messaging. Used by Apple in writing macOS and iOS.
+
+```objective-c
+main()
+{
+  puts("Hello World!");
+  return 0;
+}
+```
+
+### Pascal
+
+A popular language in the 80s and 90s especially for teaching programming. It evolved a great deal and was also the language used in the Delphi RAD toolset.
+
+```pascal
+program HelloWorld(output);
+begin
+  Write('Hello, world!')
+end.
+```
+
+### Perl
+
+Perl is very powerful for text processing. A popular option for creating websites in the early days of dynamic websites.
+
+```perl
+print "Hello, World!\n";
+```
+
+### PHP
+
+PHP is the most popular language for building the backend of websites. It’s what Facebook and WordPress are written in. Facebook decided to create their own dialect of PHP called [Hack](https://en.wikipedia.org/wiki/Hack_(programming_language)).
+
+```php
+<?php echo "Hello, World";
+```
+
+### PowerShell
+
+Used to interact with and manage Windows systems at the command line level.
+
+```powershell
+Write-Host "Hello, World!"
+```
+
+### Python
+
+Has a compact syntax needing far fewer lines of code than languages like Java or C++. It’s very popular and is used for websites and artificial intelligence (AI) tasks.
+
+```python
+print("Hello World")
+```
+
+### R
+
+A great language for doing statistics, and a popular choice in the scientific world.
+
+```R
+cat("Hello world\n")
+```
+
+### Ruby
+
+Designed to be a productive and fun language to use, stressing human needs over computer needs. The Rails web framework was written for Ruby, and had a huge impact on web framework design. Ruby is still a popular language for creating websites.
+
+```ruby
+puts 'Hello World!'
+```
+
+### Rust
+
+A new language that is intended to replace languages like C for doing systems-level work. Parts of Firefox are being replaced with Rust.
+
+```rust
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+### Scala
+
+Designed to address some of the criticisms of Java. A function-focused language that runs on the Java virtual machine.
+
+```scala
+ object HelloWorld extends App {
+   println("Hello, World!")
+ }
+```
+
+### Scheme
+
+One of the two main dialects of Lisp, the other being Common List. It tried to be minimalistic in design and allow powerful extension of the language.
+
+```scheme
+(let ((hello0 (lambda() (display "Hello world") (newline))))
+  (hello0))
+```
+
+### Smalltalk
+
+A very important language that has had a massive influence on many programming languages. It was also popular with people who would popularise programming best practices. Many things that are now common in programming were first done in Smalltalk.
+
+```smalltalk
+Transcript show: 'Hello World!'.
+```
+
+### Swift
+
+A newer language created at Apple that is being promoted to replace Objective-C for use on its platforms. It’s designed to be an easier language to learn and use without losing the performance of Objective-C.
+
+```swift
+println("Hello, world!")
+```
+
+### Tcl
+
+Used in combination with the Tk extension, Tcl/Tk is popular for creating graphical user interfaces.
+
+```tcl
+puts "Hello World!"
+```
+
+### TypeScript
+
+Designed in Microsoft, it’s a dialect of JavaScript that adds strict rules to help with large projects while remaining compatible with JavaScript.
+
+```typescript
+console.log("Hello World!");
+```
+
+
+
+## Prism.js Plugin Tests
+
+### Line Numbers
+
+Example: 
+
+See the last example (JSONP highlight) to which the line numbers classes have been added...
+
+### Web platform docs
+
+No setup required, just include the plugin in your download and you’re good to go!
+
+Tokens that currently link to documentation:
+
+HTML, MathML and SVG tags
+HTML, MathML and SVG non-namespaced attributes
+(Non-prefixed) CSS properties
+(Non-prefixed) CSS @rules
+(Non-prefixed) CSS pseudo-classes
+(Non-prefixed) CSS pseudo-elements (starting with ::)
+
+CSS Example
+
+```css
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+
+@font-face {
+	src: url(http://lea.verou.me/logo.otf);
+	font-family: 'LeaVerou';
+}
+
+/*
+ Shared styles
+ */
+ 
+section h1,
+#features li strong,
+header h2,
+footer p {
+	font: 100% Rockwell, Arvo, serif;
+}
+```
+
+### File Highlight
+
+Use the `data-src` attribute on empty `<pre>` elements, like so:
+
+```html
+<pre data-src="./assets/css/app.css"></pre>
+```
+
+You don’t need to specify the language, it’s automatically determined by the file extension. If, however, the language cannot be determined from the file extension or the file extension is incorrect, you may specify a language as well (with the usual class name way).
+
+Please note that the files are fetched with XMLHttpRequest. This means that if the file is on a different origin, fetching it will fail, unless CORS is enabled on that website.
+
+> Since this site compiles everything into a dist folder a working example is not included. But it does work...
+
+
+### JSONP Highlight
+
+Use the `data-jsonp` attribute on `<pre>` elements, like so:
+
+```html
+<pre
+  class="language-javascript"
+  data-jsonp="https://api.github.com/repos/leaverou/prism/contents/prism.js">
+</pre>
+```
+
+Don't specifiy the `callback` query parameter in the URL; this will be added automatically. If the API expects a different callback parameter name however, use the `data-callback` parameter to specify the name:
+
+```html
+<pre class="…" data-jsonp="…" data-callback="cb"></pre>
+```
+
+The next trick is of course actually extracting something from the JSONP response worth highlighting, which means processing the response to extract the interesting data.
+
+The following JSONP APIs are automatically detected and parsed:
+
+- [GitHub](https://developer.github.com/v3/repos/contents/#get-contents)
+- [GitHub Gists](https://developer.github.com/v3/gists/#get-a-single-gist)
+- [Bitbucket](https://confluence.atlassian.com/display/BITBUCKET/src+Resources#srcResources-GETrawcontentofanindividualfile)
+
+If you need to do your own parsing, you can hook your your own data adapters in two ways:
+
+1. Supply the `data-adapter` parameter on the `<pre>` element. This must be the name of a globally defined function. The plugin will use *only* this adapter to parse the response.
+2. Register your adapter function by calling `Prism.plugins.jsonphighlight.registerAdapter(function(rsp) { … })`. It will be added to the list of inbuilt adapters and used if no other registered adapater (e.g. GitHub/Bitbucket) can parse the response.
+
+In either case, the function must accept at least a single parameter (the JSONP response) and returns a string of the content to highlight. If your adapter cannot parse the response, you must return `null`. The DOM node that will contain the highlighted code will also be passed in as the second argument, incase you need to use it to query any extra information (maybe you wish to inspect the `class` or `data-jsonp` attributes to assist in parsing the response).
+
+The following example demonstrates both methods of using a custom adapter, to simply return the stringyfied JSONP response (i.e highlight the entire JSONP data):
+
+```html
+<!-- perhaps this is in a .js file elsewhere -->
+<script>
+	function dump_json(rsp) {
+		return "using dump_json: " + JSON.stringify(rsp,null,2);
+	}
+</script>
+
+<!-- … include prism.js … -->
+<script>
+	Prism.plugins.jsonphighlight.registerAdapter(function(rsp) {
+		return "using registerAdapter: " + JSON.stringify(rsp,null,2);
+	})
+</script>
+
+```
+
+And later in your HTML:
+
+```html
+<!-- using the data-adapter attribute -->
+<pre class="language-javascript" data-jsonp="…" data-adapter="dump_json"></pre>
+
+<!-- using whatever data adapters are available -->
+<pre class="language-javascript" data-jsonp="…"></pre>
+
+```
+
+Finally, unlike like the [File Highlight](http://prismjs.com/plugins/file-highlight/index.html) plugin, you *do* need to supply the appropriate `class` with the language to highlight. This could have been auto-detected, but since you're not actually linking to a file it's not always possible (see below in the example using GitHub status). Furthermore, if you're linking to files with a `.xaml` extension for example, this plugin then needs to somehow map that to highlight as `markup`, which just means more bloat. You know what you're trying to highlight, just say so :)
+
+
+#### Caveat for Gists
+
+There's a bit of a catch with gists, as they can actually contain multiple files. There are two options to handle this:
+
+1. If your gist only contains one file, you don't need to to anything; the one and only file will automatically be chosen and highlighted
+
+2. If your file contains multiple files, the first one will be chosen by default. However, you can supply the filename in the `data-filename` attribute, and this file will be highlighted instead:
+
+```html
+<pre class="…" data-jsonp="…" data-filename="mydemo.js"></pre>
+```
+
+#### Example
+
+Prism.js from github repo:
+
+<pre class="line-numbers language-javascript" data-jsonp="https://api.github.com/repos/PrismJS/prism/contents/plugins/jsonp-highlight/prism-jsonp-highlight.js"> </pre>
+
+
+{{/markdown}}
+        </article>
+    </div>
+
+</div>

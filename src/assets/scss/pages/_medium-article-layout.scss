@@ -1,0 +1,38 @@
+.medium-article-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr;
+}
+
+
+.medium-article-layout > * {
+    grid-column: 4;
+}
+
+
+
+.medium-article-layout > figure.fullwidth {
+    grid-column: 1 / -1;
+    margin: 20px 0;
+}
+
+
+.medium-article-layout > figure.mediumwidth {
+    grid-column: 2 / -2;
+    margin: 20px 0;
+}
+
+.medium-article-layout > figure.small-image {
+    grid-column: 4 / -4;
+    margin: 20px 0;
+}
+
+.medium-article-layout > blockquote {
+    grid-column: 3 / 5;
+    padding-left: 10px;
+    color: #666;
+    border-left: 3px solid black;
+}
+
+.aside {
+    grid-column: 5;
+}

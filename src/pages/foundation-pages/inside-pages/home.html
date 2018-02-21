@@ -1,0 +1,90 @@
+---
+layout: foundation-page
+page: home
+---
+
+<div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <header class="cell text-center">
+        <a href="/"><img src="{{root}}assets/img/logo.png" alt="Topsy Turvy Cake Design. Click for home."></a>
+      </header>
+    </div>
+
+    {{> inside_top_bar_menu}}
+
+    <div class="grid-x grid-margin-x">
+     <main class="medium-7 cell">
+       <img data-interchange="[{{root}}assets/img/ad.png, small], [{{root}}assets/img/audry-cta.jpg, medium]">
+       <section>
+         <h2>Braking Tips</h2>
+         <div class="grid-x grid-margin-x">
+           <article class="medium-4 cell">
+             <a href=""><img src="{{root}}assets/img/tips1.jpg" alt="Essential Tools."></a>
+             <h3><a href="">A Cake Decorator's Essential Tools</a></h3>
+           </article>
+           <article class="medium-4 cell">
+             <a href=""><img src="{{root}}assets/img/tips2.jpg" alt="Buttercream."></a>
+             <h3><a href="">Buttercream or Fondant?</a></h3>
+           </article>
+           <article class="medium-4 cell">
+             <a href=""><img src="{{root}}assets/img/tips3.jpg" alt="Wedding cake."></a>
+             <h3><a href="">Saving the Top Tier of Your Wedding Cake</a></h3>
+           </article>
+         </div>
+        <p><a href="" class="button expanded" title="40 great recipes here!" data-tooltip aria-haspopup="true" tabindex="1" data-position="bottom" data-alignment="center" data-disable-hover="false">See more baking tips</a></p>
+       </section>
+     </main>
+     <aside class="medium-5 cell">
+        <article>
+          <img src="{{root}}assets/img/audrey.jpg" alt="Audrey, baker and owner." class="float-right">
+          <blockquote>
+              <p>Designing cakes for my clients is my passion. Whether it’s a traditional wedding cake or another celebration, I’m excited to help you create the cake of your dreams!</p>
+              <cite>Audrey</cite>
+          </blockquote>
+          <p><button class="button hollow warning" data-open="subscribe">Subscribe to my newsletter</button></p>
+        </article>
+        <div class="card">
+          <h2 class="card-divider">Latest from the Blog</h2>
+            <ul class="card-section no-bullet">
+              <li><a href="">Planning for Your Big Event</a></li>
+              <li><a href="">A Cake Decorator’s Essential Tools</a></li>
+              <li><a href="">Birthday Cake for Fido</a></li>
+              <li><a href="">Pumpkin Pie</a></li>
+              <li><a href="">Victorian Sponge Cake</a></li>
+            </ul>
+          </div>
+        <h2>Latest Photos</h2>
+          <div class="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-3">
+            <div class="cell"><img src="{{root}}assets/img/grid/blog1.jpg" alt="Blog photo 1"></div>
+            <div class="cell"><img src="{{root}}assets/img/grid/blog2.jpg" alt="Blog photo 2"></div>
+            <div class="cell"><img src="{{root}}assets/img/grid/blog3.jpg" alt="Blog photo 3"></div>
+            <div class="cell"><img src="{{root}}assets/img/grid/blog4.jpg" alt="Blog photo 4"></div>
+            <div class="cell"><img src="{{root}}assets/img/grid/blog5.jpg" alt="Blog photo 5"></div>
+            <div class="cell"><img src="{{root}}assets/img/grid/blog6.jpg" alt="Blog photo 6"></div>
+          </div>
+      </aside>
+    </div>
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <footer class="callout secondary cell">
+        <p>Topsy Turvy Cake Design is a fictitious brand created by lynda.com solely for the purpose of training. All products and people associated with Topsy Turvy Cake Design are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+      </footer>
+    </div>
+  </div>
+
+<!-- modal window for subscribe button - place this HTML anywhere -->
+  <div class="reveal" id="subscribe" data-reveal>
+    <h3>Subscribe to my newsletter</h3>
+    <p>Get amazing recipes, beautiful cake photos, and more sent to your inbox each week!</p>
+    <form>
+      <label>Email address:
+        <input type="email">
+      </label>
+      <button class="button hollow primary">Subscribe!</button>
+    </form>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+
+  {{> pagenote}}

@@ -1,0 +1,24 @@
+<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+    <div class="title-bar-title">Menu</div>
+</div>
+<div class="top-bar">
+    <div class="off-canvas in-canvas-for-medium position-left" data-off-canvas id="responsive-menu">
+        <nav class="top-bar-left">
+            <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+                {{#each inside_pages_menu.data}}
+                <li class="{{#ifpage page}}is-active{{/ifpage}}">
+                    <a href="{{root}}{{append page ".html"}}" title="{{description}}">{{category}}</a>
+                    {{#if items}}
+                    <ul class="menu">
+                        {{#each items}}
+                        <li class="{{#ifpage sub_page}}is-active{{/ifpage}}"><a href="{{root}}{{append sub_page ".html"}}" class="" title="{{description}}">{{linkname}}</a></li>
+                        {{/each}}
+                    </ul>
+                    {{/if}}
+                </li>
+                {{/each}}
+            </ul>
+        </nav>
+    </div>
+</div>

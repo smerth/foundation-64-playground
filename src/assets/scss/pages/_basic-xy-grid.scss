@@ -1,0 +1,20 @@
+/* copied from https://codepen.io/ZURBFoundation/pen/gRYeMQ?editors=1000, with some modifications */
+
+// body {
+//   background: #dbeaf3;
+// }
+
+// .grid-container {
+//   background: #b91c21;
+// }
+
+.grid-example.cell {
+    background: #f9e2fd;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+.grid-example.cell:nth-child(odd) {
+    background: #e6aed6;
+  }

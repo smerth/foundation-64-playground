@@ -1,0 +1,156 @@
+{
+    "words": [
+        {
+            "levelorder": "0001",
+            "name": "爱",
+            "definition": "to love; affection; to be fond of; to like",
+            "pinyin": "ai4",
+            "c-count": "1",
+            "wordtype": "verbs"
+        },
+        {
+            "levelorder": "0002",
+            "name": "八",
+            "definition": "eight; 8",
+            "pinyin": "ba1",
+            "c-count": "1",
+            "wordtype": "numbers"
+        },
+        {
+            "levelorder": "0003",
+            "name": "爸爸",
+            "definition": "(informal) father; CL:個|个[ge4],位[wei4]",
+            "pinyin": "ba4 ba5",
+            "c-count": "2",
+            "wordtype": "nouns"
+        },
+        {
+            "levelorder": "0004",
+            "name": "杯子",
+            "definition": "cup; glass; CL:個|个[ge4],支[zhi1],枝[zhi1]",
+            "pinyin": "bei1 zi5",
+            "c-count": "2",
+            "wordtype": "nouns"
+        },
+        {
+            "levelorder": "0005",
+            "name": "北京",
+            "definition": "Beijing, capital of People's Republic of China; Peking; PRC government",
+            "pinyin": "Bei3 jing1",
+            "c-count": "2",
+            "wordtype": "nouns"
+        },
+        {
+            "levelorder": "0006",
+            "name": "本",
+            "definition": "roots or stems of plants; origin; source; this; the current; root; foundation; basis; classifier for books, periodicals, files etc; originally",
+            "pinyin": "ben3",
+            "c-count": "1",
+            "wordtype": "nouns"
+        },
+        {
+            "levelorder": "0007",
+            "name": "不客气",
+            "definition": "you're welcome; impolite; rude; blunt; don't mention it",
+            "pinyin": "bu2 ke4 qi5",
+            "c-count": "3",
+            "wordtype": "adverb"
+        },
+        {
+            "levelorder": "0008",
+            "name": "不",
+            "definition": "(negative prefix); not; no",
+            "pinyin": "bu4",
+            "c-count": "1",
+            "wordtype": "nouns"
+        },
+        {
+            "levelorder": "0009",
+            "name": "菜",
+            "definition": "dish (type of food); vegetables; vegetable; cuisine; CL:盤|盘[pan2],道[dao4]",
+            "pinyin": "cai4",
+            "c-count": "1",
+            "wordtype": "nouns"
+        },
+        {
+            "levelorder": "0010",
+            "name": "茶",
+            "definition": "tea; tea plant; CL:杯[bei1],壺|壶[hu2]",
+            "pinyin": "cha2",
+            "c-count": "1",
+            "wordtype": "nouns"
+        },
+        {
+            "levelorder": "0011",
+            "name": "吃",
+            "definition": "to eat; to have one's meal; to eradicate; to destroy; to absorb; to suffer; to exhaust",
+            "pinyin": "chi1",
+            "c-count": "1",
+            "wordtype": "verb"
+        },
+        {
+            "levelorder": "0012",
+            "name": "出租车",
+            "definition": "taxi",
+            "pinyin": "chu1 zu1 che1",
+            "c-count": "3",
+            "wordtype": "nouns"
+        },
+        {
+            "levelorder": "0013",
+            "name": "打电话",
+            "definition": "to make a telephone call",
+            "pinyin": "da3 dian4 hua4",
+            "c-count": "3",
+            "wordtype": "verb"
+        },
+        {
+            "levelorder": "0014",
+            "name": "大",
+            "definition": "big; huge; large; major; great; wide; deep; oldest; eldest",
+            "pinyin": "da4",
+            "c-count": "1",
+            "wordtype": "adjective"
+        },
+        {
+            "levelorder": "0015",
+            "name": "的",
+            "definition": "of; structural particle: used before a nouns, linking it to preceding possessive or descriptive attributive",
+            "pinyin": "de5",
+            "c-count": "1",
+            "wordtype": "preposition"
+        },
+        {
+            "levelorder": "0016",
+            "name": "点",
+            "definition": "drop (of liquid); stain; spot; speck; jot; dot stroke (in Chinese characters); decimal point; point; mark (of degree or level); a place (with certain characteristics); iron bell; o’clock; a little; a bit; some; (point) unit of measurement for type; to touch on briefly; to make clear; to light; to ignite; to kindle; period of time at night (24 minutes) (old); a drip; to dibble; classifier for small indeterminate quantities",
+            "pinyin": "dian3",
+            "c-count": "1",
+            "wordtype": "nouns"
+        },
+        {
+            "levelorder": "0017",
+            "name": "电脑",
+            "definition": "computer; CL:臺|台[tai2]",
+            "pinyin": "dian4 nao3",
+            "c-count": "2",
+            "wordtype": "nouns"
+        },
+        {
+            "levelorder": "0018",
+            "name": "电视",
+            "definition": "television; TV; CL:臺|台[tai2],個|个[ge4]",
+            "pinyin": "dian4 shi4",
+            "c-count": "2",
+            "wordtype": "nouns"
+        },
+        {
+            "levelorder": "0019",
+            "name": "电影",
+            "definition": "movie; film; CL:部[bu4],片[pian4],幕[mu4],場|场[chang3]",
+            "pinyin": "dian4 ying3",
+            "c-count": "2",
+            "wordtype": "nouns"
+        }
+    ]
+}

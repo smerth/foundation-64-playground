@@ -1,0 +1,39 @@
+---
+layout: foundation-page
+---
+
+<div class="grid-container">
+    <div class="grid-y medium-grid-frame">
+        <div class="cell medium-auto medium-cell-block-container">
+            <div class="grid-x grid-padding-x">
+                <aside class="cell medium-4 medium-cell-block-y">
+                    <h3>Independent scrolling sidebar</h3>
+                    <div class="filters">
+                        <h2>Filter by:</h2>
+                        <button class="button" type="button" data-filter="all">All</button>
+                        <button class="button" type="button" data-filter=".nouns">Nouns</button>
+                        <button class="button" type="button" data-filter=".verbs">Verbs</button>
+                        <button class="button" type="button" data-filter=".numbers">Numbers</button>
+                    </div>
+                    <div class="sorters">
+                    <h2>Sort by:</h2>
+                        <button class="button" type="button" data-sort="order:asc">Ascending</button>
+                        <button class="button" type="button" data-sort="order:descending">Descending</button>
+                        <button class="button" type="button" data-sort="random">Random</button> 
+                    </div>
+                </aside>
+                <main class="cell medium-8 medium-cell-block-y">
+                    <div class="mixitup-container">
+                        <h3>Independent scrolling body</h3>
+                        <h1>Data:</h1>
+                        {{#each hsk_level_one.words}} 
+                        <div class="callout mix {{this.wordtype}}" data-order="{{this.levelorder}}">{{this.name}} ({{this.pinyin}}) - {{this.definition}}</div>
+                        {{/each}}
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> pagecode}}

@@ -1,0 +1,25 @@
+<div class="grid-container">
+    <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="cell callout">
+            <h1>{{page}}</h1>
+            <h2>Placeholder page to demonstrate menu.</h2>
+        </div>
+    </div>
+    <div class="grid-x">
+        <div class="cell">
+            <div class="top-bar">
+                <nav class="top-bar-left">
+                    <ul class="menu">
+                    <li class="{{#ifpage page}}is-active{{/ifpage}}"><a href="{{root}}foundation-pages/inside-pages/home.html">Home</a></li>
+                    <li class="{{#ifpage page}}is-active{{/ifpage}}"><a href="{{root}}foundation-pages/inside-pages/about.html">About</a></li>
+                    <li class="{{#ifpage page}}is-active{{/ifpage}}"><a href="{{root}}foundation-pages/inside-pages/blog.html">Blog</a></li>
+                    <li class="{{#ifpage page}}is-active{{/ifpage}}"><a href="{{root}}foundation-pages/inside-pages/recipes.html">Recipes</a></li>
+                    <li class="{{#ifpage page}}is-active{{/ifpage}}"><a href="{{root}}foundation-pages/inside-pages/portfolio.html">Portfolio</a></li>
+                    <li class="{{#ifpage page}}is-active{{/ifpage}}"><a href="{{root}}foundation-pages/inside-pages/newsletter.html">Newsletter</a></li>
+                    <li class="{{#ifpage page}}is-active{{/ifpage}}"><a href="{{root}}foundation-pages/inside-pages/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

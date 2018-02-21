@@ -1,0 +1,58 @@
+---
+layout: foundation-page
+kit: card-flex-article
+---
+
+<div class="grid-container">
+    <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="cell callout">
+{{{md "src/markdown/foundation-pages/building-blocks.md"}}}
+        </div>
+    </div>
+</div>
+
+<div class="grid-container">
+
+    <h1>Some Expamples of Blog Partials</h1>
+    <ul class="tabs" data-responsive-accordion-tabs="tabs accordion" id="dat">
+        <li class="tabs-title is-active"><a href="#start" aria-selected="true">Blog Partials</a></li>
+        {{#each partials.blog}}
+        {{#each items}}
+        <li class="tabs-title"><a href="#{{file}}" aria-selected="true">{{file}}</a></li>
+        {{/each}}
+        {{/each}}
+    </ul>
+
+    <div class="tabs-content" data-tabs-content="dat">
+        <div class="tabs-panel is-active" id="start">
+        Check out blog partials
+        </div>
+        <div class="tabs-panel" id="card-flex-article">
+        {{> card-flex-article}}
+        </div>
+        <div class="tabs-panel" id="featured-blog-posts-panel">
+        {{> featured-blog-posts-panel}}
+        </div>
+        <div class="tabs-panel" id="image-hover-wrapper">
+        {{> image-hover-wrapper}}
+        </div>
+        <div class="tabs-panel" id="neat-article-container">
+        {{> neat-article-container}}
+        </div>
+        <div class="tabs-panel" id="pagination-pointed">
+        {{> pagination-pointed}}
+        </div>
+        <div class="tabs-panel" id="pagination-responsive-numbers">
+        {{> pagination-responsive-numbers}}
+        </div>
+        <div class="tabs-panel" id="quote-inline">
+        {{> quote-inline}}
+        </div>
+        <div class="tabs-panel" id="read-more">
+        {{> read-more}}
+        </div>
+    </div>
+
+</div>
+
+{{> pagecode}}

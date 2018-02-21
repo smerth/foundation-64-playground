@@ -1,0 +1,186 @@
+--- 
+data: 
+  - 
+    category: Grid
+    description: ~
+    items: 
+      - 
+        description: "A basic XY grid. With no wrapping grid-container the grid expands to take up all available screen width."
+        linkname: "Basic XY Grid"
+        page: grid-xy
+      - 
+        description: "The grid defaults to the full width of the available space. To contain it use the grid-container class. The container will be centered and have a max-width equal to your $grid-container setting (1200px by default), along with padding on the left/right equal to half your $grid-container-padding setting."
+        linkname: "Grid Container"
+        page: grid-container
+      - 
+        description: "To stretch the content to the full width of the available space, simply add the class fluid to your grid-container."
+        linkname: "Grid Container Fluid"
+        page: grid-container-fluid
+      - 
+        description: "To stretch the content to the full width of the available space and remove grid container padding, simply add the class full to your grid-container. Note that this variation is primarily for use for the grid-margin-x - it works with grid-padding-x too, but will work the same as .grid-container.fluid."
+        linkname: "Grid Container Full"
+        page: grid-container-full
+      - 
+        description: "The defining feature of the XY grid is the ability to use margin AND padding grids in harmony. To define a grid type, simply set .grid-margin-x or .grid-padding-x on the grid."
+        linkname: "Grid Margin X"
+        page: grid-margin-x
+      - 
+        description: "The defining feature of the XY grid is the ability to use margin AND padding grids in harmony. To define a grid type, simply set .grid-margin-x or .grid-padding-x on the grid."
+        linkname: "Grid Padding X"
+        page: grid-padding-x
+      - 
+        description: "The .[size]-[gutter-type]-collapse class lets you remove cell gutters. There are times when you won't want each media query to be collapsed. In this case, use the media query size you want and collapse and add that to your grid element. Example shows gutters at small and no gutters on medium and up."
+        linkname: "Grid Margin and Padding Collapse"
+        page: grid-margin-padding-collapse
+      - 
+        description: "If the class .auto or .[size]-auto is added to the cell, it will take up the remaining space."
+        linkname: "Grid Auto-sizing"
+        page: grid-auto-sizing
+      - 
+        description: "Flexbox supports source ordering, making it easy to rearrange columns on different screen sizes without weird relative positioning tricks.  Columns within a row will be sorted by their order property. Lower numbers are placed first. If multiple columns have the same number, they're sorted in the order they appear in the HTML. We have a set of classes that make it easy to setup source ordering in your HTML. They also come in responsive flavors, allowing you to reorder a grid on different screen sizes."
+        linkname: "Grid Source Order"
+        page: grid-source-ordering
+      - 
+        description: "To define cell widths within a direction-level, instead of the individual cell level, add the class .[size]-up-[n] to a grid-x or grid-y, where [n] is the number of cells to display per direction, and [size] is the breakpoint at which to apply the effect."
+        linkname: "Grid - Block Grid"
+        page: grid-blockgrid
+      - 
+        description: "The XY grid also supports vertical grids. Simply apply .grid-y instead of .grid-x. The internal cells will shift automatically to provide spacing vertically rather than horizontally.  You can also apply margin or padding with .grid-margin-y and .grid-padding-y to apply spacing to the top and bottom of cells."
+        linkname: "Vertical Grid"
+        page: "grid-vertical"
+      - 
+        description: "Completed grid page from Lynda.com tutorial."
+        linkname: "Grid Finished Page"
+        page: grid-finished-page
+  - 
+    category: Navigation
+    description: ~
+    items: 
+      - 
+        description: "A top bar (.top-bar) can have two sections: a left-hand section (.top-bar-left) and a right-hand section (.top-bar-right). On small screens, these sections stack on top of each other."
+        linkname: "Navigation Top Bar"
+        page: navigation-top-bar-simple
+      - 
+        description: "Dropdown menus build on the Menu component's syntax. Add the class .dropdown and the attribute data-dropdown-menu to the menu container to set up the dropdown. To create dropdown menus, nest a new <ul> inside an <li>. You can nest further to create more levels of dropdowns."
+        linkname: "Dropdown Sub-menus"
+        page: navigation-dropdown-menu
+      - 
+        description: ~
+        linkname: "Responsive Top Bar"
+        page: navigation-responsive-top-bar
+      - 
+        description: "A drilldown menu works well on mobile, but on larger screens, you may want to convert that same menu into a dropdown."
+        linkname: "Drilldown Menu"
+        page: navigation-drilldown-menu
+      - 
+        description: "A drilldown off screen menu on mobile and a dropdown top bar menu on medium screens"
+        linkname: "Off Canvas and Responsive Top Bar"
+        page: navigation-off-canvas-top-bar
+  - 
+    category: Containers
+    description: ~
+    items: 
+      - 
+        description: "A callout is just an element with a .callout class applied. You can put any kind of content inside."
+        linkname: Callouts
+        page: containers-callouts
+      - 
+        description: "A card is just an element with a .card class applied. You can put any kind of content inside. Make sure you wrap your content in a .card-section element in order to achieve the traditional card look. A card container has no padding, allowing you to place full-bleed images inside. Use the .card-divider and .card-section classes to sub-divide a card."
+        linkname: Cards
+        page: containers-cards
+  - 
+    category: Layouts
+    description: ~
+    items: 
+      - 
+        description: "Simple Off Canvas Main Menu"
+        linkname: "Off Canvas Main Menu"
+        page: layout-off-canvas-main-menu
+      - 
+        description: "Replicating the article layout from Medium.com using CSS grid - not Foundation.  You don't have to use Foundation grid if you don't want to."
+        linkname: "Medium Article with CSS Grid"
+        page: layout-medium-article-css-grid
+  - 
+    category: Controls
+    description: ~
+    items: 
+      - 
+        description: "A basic button can be created with minimal markup. Because buttons can be used for many purposes, it's important to use the right tag.  Use the <a> tag if the button is a link to another page, or a link to an anchor within a page. Generally anchors don't require JavaScript to work.  Use the <button> tag if the button performs an action that changes something on the current page. <button> elements almost always require JavaScript to function."
+        linkname: Buttons
+        page: controls-buttons
+  - 
+    category: Typography
+    description: ~
+    items: 
+      - 
+        description: ~
+        linkname: "Lists Quotes and Align"
+        page: typography-lists-quotes-align
+  - 
+    category: Building Blocks
+    description: Pre-made partials for quick prototyping
+    items: 
+      - 
+        description: "Partials for Blog pages"
+        linkname: "Blog Building Block Kit"
+        page: building-blocks-blog
+  -
+    category: Plugins
+    description: "Demonstrations of Foundation 6 Plugins"
+    items: 
+      - 
+        description: "The 'Order Cake Today' image on medium is swapped for the smaller 'Cupcake' image on mobile"
+        linkname: Interchange
+        page: plugins-interchange
+      - 
+        description: "The 'Subscribe to my newsletter' link gets a popup."
+        linkname: Reveal
+        page: plugins-reveal
+      - 
+        description: "The 'See more baking tips' links gets a tooltip."
+        linkname: Tooltips
+        page: plugins-tooltips
+      - 
+        description: "The wedding cake photos are in an Orbit carousel."
+        linkname: "Orbit (Image Carousel)"
+        page: plugins-orbit-carousel
+  - 
+    category: "Javascript Libraries"
+    description: "Examples of Javscript Libraries integrated with Foundation 6"
+    items: 
+      - 
+        description: "MixItUp.js is a useful library for sorting and filtering."
+        linkname: "MixItUp Filtering and Sorting"
+        page: js-mixitup
+      - 
+        description: "MixItUp.js is a useful library for sorting and filtering. Data comes from a yml file."
+        linkname: "MixItUp With Data"
+        page: js-mixitup-hsk-data
+      - 
+        description: "This page demonstrates prism code highlighting.  Code can originate in Markdown files, code files from within the project or external files for sources like github."
+        linkname: "Prism Code Highlighting"
+        page: js-prism-highlighting
+  - 
+    category: Panini
+    description: ~
+    items: 
+      - 
+        description: "Markdown imported using a Handlebars Helper."
+        linkname: Markdown
+        page: panini-md-markdown-partial
+      - 
+        description: "Menu generated from JSON data."
+        linkname: "JSON Menu"
+        page: panini-data-json-menu
+      - 
+        description: "Menu generated from YAML data"
+        linkname: "YAML Menu"
+        page: panini-data-yaml-menu
+      - 
+        description: "Use Panini and YAML to generate an icon menu and assign the active class using {{#ifpage }}."
+        linkname: "Icon Navigation from Data"
+        page: panini-icon-navigation
+      - 
+        description: "Use Panini and YAML to generate this sites navigation."
+        linkname: "Main Navigation from Data"
+        page: panini-main-navigation

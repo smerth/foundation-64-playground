@@ -1,0 +1,83 @@
+// @media screen and (min-width: 40em) {
+// 	h2 {
+// 		font-size: 1.75em; /* 28px */
+// 	}
+// 	h3 {
+// 		font-size: 1.375em; /* 22px */
+// 	}
+// }
+
+
+// Active class on a tags and buttons
+a.active,
+button.active {
+	background: #dbeaf3;
+	
+}
+
+img.float-left {
+	margin: 0 1em 1em 0;
+}
+img.float-right {
+	margin: 0 0 1em 1em;
+}
+img {
+	// border-radius: 10px;
+}
+.card figure {
+	margin-bottom: 1em;
+}
+
+.main-menu-button {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 100;
+}
+.main-menu p {
+	margin-left: 1em;
+	color: $secondary-color;
+	font-size: smaller;
+}
+.main-menu a {
+	padding-bottom: 0.5em;
+}
+
+pre code {
+	border: none;
+	background-color: inherit;
+}
+pre {
+	// white-space: pre-wrap;  
+	// white-space: -moz-pre-wrap; 
+	// white-space: -pre-wrap; 
+	// white-space: -o-pre-wrap; 
+	// word-wrap: break-word; 
+	// width:100%; 
+	overflow-x:auto;
+}
+
+
+// code toolbar
+pre.code-toolbar > .toolbar a, pre.code-toolbar > .toolbar button, pre.code-toolbar > .toolbar span {
+	color: white;
+	background: red;
+	margin-right: 1em;
+}
+
+.page-title-description {
+	margin-top: 1em;
+}
+
+#foundation-pages-menu-off-canvas.off-canvas.is-transition-overlap.is-open {
+	z-index: 100;
+}
+
+.filter-nav button img {
+	width: 50px;
+}
+.filter-nav button span {
+	clear: both;
+	display: block;
+}
+

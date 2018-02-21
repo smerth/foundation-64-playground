@@ -1,0 +1,29 @@
+food_icons:
+  - 
+    img: cheese.svg
+    title: Cheese
+    alt: Cheese
+    page: 'panini-icon-navigation'
+    classes:
+  - 
+    img: coffee-cup.svg
+    title: Coffee
+    alt: Coffee Cup
+    page: 'coffee'
+    classes:
+  - 
+    img: groceries.svg
+    title: Groceries
+    alt: Groceries
+    classes:
+  - 
+    img: salad.svg
+    title: Salad
+    alt: Salad
+    classes:
+  - 
+    img: toast.svg
+    title: Toast
+    alt: Toast
+    classes:
+  

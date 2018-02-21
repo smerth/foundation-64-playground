@@ -1,0 +1,20 @@
+--- 
+blog:
+  - kitname: blog
+    items: 
+      - 
+        file: card-flex-article
+      - 
+        file: featured-blog-posts-panel
+      - 
+        file: image-hover-wrapper
+      - 
+        file: neat-article-container
+      - 
+        file: pagination-pointed
+      - 
+        file: pagination-responsive-numbers
+      - 
+        file: quote-inline
+      - 
+        file: read-more

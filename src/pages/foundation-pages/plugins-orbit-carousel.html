@@ -1,0 +1,86 @@
+---
+layout: foundation-page
+---
+
+<div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y">
+      <header class="cell text-center">
+        <a href="/"><img src="{{root}}assets/img/logo.png" alt="Topsy Turvy Cake Design. Click for home."></a>
+      </header>
+    </div>
+    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+    <div class="top-bar">
+      <div class="off-canvas in-canvas-for-medium position-left" data-off-canvas id="responsive-menu">
+        <nav class="top-bar-left">
+          <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+            <li><a href="{{root}}foundation-pages/js-reveal.html">Home</a></li>
+            <li class="is-active"><a href="{{root}}foundation-pages/{{page}}.html">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Recipes</a></li>
+            <li><a href="">Portfolio</a>
+                <ul class="vertical nested menu">
+                  <li><a href="">Wedding cakes</a></li>
+                  <li><a href="">Birthday cakes</a></li>
+                  <li><a href="">Other occasions</a></li>
+                </ul>
+            </li>
+            <li><a href="">Newsletter</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-x grid-margin-y">
+     <main class="medium-8 cell">
+        <h2>About Audrey</h2>
+        <p><img src="{{root}}assets/img/audrey-about.jpg" alt="Audrey in the kitchen." class="float-left">In 2003, I went to culinary school to become a cake designer. This decision was spurred after my son was diagnosed with a milk allergy, and I couldn’t find a lactose-free cake he could have for his second birthday. As a result, I did the research and made one myself. I wanted to make it special and give it a personal touch that reflected his interests, so I took a cake decorating class at a local community center and learned the basics of using fondant. With the skills I acquired, I made him a rocket ship cake that we’ll never forget. It took me an entire day to carefully craft his cake, and while I still had far to go in developing my talents, I discovered I loved designing cakes! And the rest is history.</p>
+
+        <p>I’ve been creating custom cakes for 11 years, and during that time I’ve won four “Best Local Wedding Cakes” awards from Our Home City News. Some of my designs have been featured in national publications and wedding registries throughout the county.</p>
+
+        <p>Designing cakes for my clients is my passion. Whether it’s a fun animal cake for a birthday, a traditional wedding cake, or a corporate cake to celebrate an achievement, I’m excited to help you create the cake of your dreams!</p>
+     </main>
+     <aside class="medium-4 cell">
+        <div class="orbit" role="region" aria-label="Wedding Cakes" data-orbit>
+          <div class="orbit-wrapper">
+            <div class="orbit-controls">
+              <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+              <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+            </div>
+            <h2>Wedding Cakes</h2>
+            <ul class="orbit-container">
+              <li class="orbit-slide is-active"><img src="{{root}}assets/img/cake/cake1.jpg" alt="Wedding cake sample 1." class="orbit-image"></li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img src="{{root}}assets/img/cake/cake2.jpg" alt="Wedding cake sample 2." class="orbit-image">
+                  <figcaption class="orbit-caption">Jason and Rebecca's cake</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img src="{{root}}assets/img/cake/cake3.jpg" alt="Wedding cake sample 3." class="orbit-image">
+                  <figcaption class="orbit-caption">Sam and Heather's cake</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide"><img src="{{root}}assets/img/cake/cake4.jpg" alt="Wedding cake sample 4." class="orbit-image"></li>
+            </ul>
+          </div>
+          <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"><span class="show-for-sr">White cake with lillies.</span><span class="show-for-sr">Current Slide</span></button>
+            <button data-slide="1"><span class="show-for-sr">Autumn cake, white and brown with orange bouquet of flowers on top.</span></button>
+            <button data-slide="2"><span class="show-for-sr">Classic white cake with red flowers.</span></button>
+            <button data-slide="3"><span class="show-for-sr">Simple white cake with several kinds of flowers.</span></button>
+          </nav>
+        </div>
+    </aside>
+  </div>
+  <div class="grid-x grid-margin-x grid-margin-y">
+    <footer class="cell secondary callout">
+      <p>Topsy Turvy Cake Design is a fictitious brand created by lynda.com solely for the purpose of training. All products and people associated with Topsy Turvy Cake Design are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+    </footer>
+  </div>
+</div>
+
+{{> pagecode}}

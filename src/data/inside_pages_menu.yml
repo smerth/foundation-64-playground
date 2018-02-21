@@ -1,0 +1,38 @@
+data:
+  - category: Home
+    description: 
+    page: home
+    items:
+  - category: About
+    description: 
+    page: about
+    items:
+  - category: Blog
+    description: 
+    page: blog
+    items:
+  - category: Recipes
+    description:
+    page: recipes
+    items:
+  - category: Portfolio
+    description:
+    page: portfolio
+    items:
+      - linkname: Wedding cakes
+        description: 
+        sub_page: wedding-cake
+      - linkname: Birthday cakes
+        description: 
+        sub_page: birthday-cake
+      - linkname: Other occasions
+        description: 
+        sub_page: other-occations
+  - category: Newsletter
+    description:
+    page: newsletter
+    items:
+  - category: Contact
+    description: 
+    page: contact
+    items:

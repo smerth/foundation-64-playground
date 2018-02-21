@@ -1,0 +1,57 @@
+---
+layout: foundation-page
+---
+
+<div class="grid-container">
+    <div class="grid-margin-x grid-padding-x">
+        <div class="cell">
+
+<h1>Sample Horizontal Dropdown Menu</h1>
+<ul class="dropdown menu" data-dropdown-menu>
+    <li>
+        <a href="#">Item 1</a>
+        <ul class="menu">
+        <li><a href="#">Item 1A</a></li>
+        <!-- ... -->
+        </ul>
+    </li>
+    <li><a href="#">Item 2</a></li>
+    <li><a href="#">Item 3</a></li>
+    <li><a href="#">Item 4</a></li>
+</ul>
+
+<h1>Horizontal Dropdown Menu - From YMAL Data</h1>
+<ul class="dropdown menu" data-dropdown-menu>
+    {{#each foundation_pages_menu.data}}
+    <li>
+        <a href="#">{{category}}</a>
+        <ul class="menu">
+        {{#each items}}
+        <li><a href="{{root}}{{url}}">{{linkname}}</a></li>
+        {{/each}}
+        </ul>
+    </li>
+    {{/each}}
+</ul>
+
+{{!-- <h1>Vertical Dropdown Menu - From JSON Data</h1>
+<ul class="dropdown menu" data-dropdown-menu>
+    {{#each foundation_pages_menu.data}}
+    <li>
+        <a href="#">{{category}}</a>
+        <ul class="menu">
+        {{#each items}}
+        <li><a href="{{root}}{{url}}">{{linkname}}</a></li>
+        {{/each}}
+        </ul>
+    </li>
+    {{/each}}
+</ul> --}}
+
+        </div>
+    </div>
+</div>
+
+{{>codeblock filepath="src/data/foundation_pages_menu.yml" lang="yaml"}}
+
+{{> pagecode}}

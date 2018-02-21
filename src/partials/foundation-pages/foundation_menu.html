@@ -1,0 +1,19 @@
+<nav class="main-menu">
+  <ul class="dropdown menu vertical" data-responsive-menu="drilldown">
+    <li {{#ifpage 'index'}}class="is-active"{{/ifpage}}>
+      <a href="{{root}}/">HOME</a>
+    </li>
+    {{#each foundation_pages_menu.data}}
+    <li>
+        <a href="#" title="{{description}}">{{category}}</a>
+        {{#if items}}
+        <ul class="menu">
+          {{#each items}}
+          <li class="{{#ifpage page}}is-active{{/ifpage}}"><a href="{{root}}/foundation-pages/{{append page ".html"}}" class="" title="{{description}}">{{linkname}}</a></li>
+          {{/each}}
+        </ul>
+        {{/if}}
+    </li>
+    {{/each}}
+  </ul>
+</nav>

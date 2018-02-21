@@ -1,0 +1,25 @@
+---
+layout: foundation-page
+---
+<div class="grid-container">
+        <nav class="grid-x grid-margin-x grid-margin-y filter-nav">
+                <div class="cell medium-2">
+                </div>
+                <div class="cell medium-8 flex-container align-spaced">
+                    {{#each icon_navigation_menu.food_icons}}
+                    <button class="filter-nav-button {{classes}} {{#ifpage page}}active{{/ifpage}}">
+                        <img src="/assets/img/icons/{{img}}" class="inject-me bb-filter-icons" height="" width="" title="{{title}}" alt="{{alt}} icon">
+                        <span>{{title}}</span>
+                    </button>
+                    {{/each}}
+                </div>
+                <div class="cell medium-2 align-right">
+                    Search component goes here...
+                </div>
+            </nav>
+        <nav class="grid-x grid-margin-x grid-margin-y">
+            <div class="cell">
+                <a href="{{root}}foundation-pages/panini-icon-navigation.html">Jump back to cheese...</a>
+            </div>
+        </nav>
+    </div>
