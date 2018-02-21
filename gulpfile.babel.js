@@ -13,8 +13,6 @@ import webpackStream from 'webpack-stream';
 import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 
-import ghPages from 'gulp-gh-pages';
-
 // var helpers = require('handlebars-helpers')();
 //=> returns object with all (130+) helpers
 var handlebars = require('handlebars');
@@ -168,12 +166,3 @@ function watch() {
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
 
-
-// Push the dist folder to gh-pages
-gulp.task('deploy',
-  gulp.series(pushghpages));
-
-function pushghpages() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
-}
