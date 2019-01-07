@@ -6,7 +6,7 @@ Click through the demo site to see something interesting.
 
 The markup for each page should be displayed on each page at the bottom so can see how the page is composed.
 
-
+![App Screenshot](https://raw.githubusercontent.com/smerth/foundation-64-playground/master/screenshot.png)
 
 ## ZURB Template
 
@@ -46,7 +46,7 @@ foundation new --framework sites --template zurb
 
 The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
 
-Now `cd` to your project name and to start your project run 
+Now `cd` to your project name and to start your project run
 
 ```bash
 foundation watch
