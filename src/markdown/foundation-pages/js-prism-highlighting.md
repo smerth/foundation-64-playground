@@ -2,26 +2,21 @@
 
 ## Language Support in Code Fences
 
-I like to write in markdown using Typora. Typora supports code highlighting for a wide range range of languages and uses Github's convenient code fencing using three back-ticks.  I find Typora's shortcuts convenient as well.
+I like to write in markdown using Typora. Typora supports code highlighting for a wide range range of languages and uses Github's convenient code fencing using three back-ticks. I find Typora's shortcuts convenient as well.
 
 The `{{#markdown}}...{{/markdown}}` helper in Panini converts markdown code blocks into markup of the form ... which is pretty standard.
 
-Prism.js takes that markup and highlights the code blocks. 
+Prism.js takes that markup and highlights the code blocks.
 
 Pretty much any language you want to write in is highlighted in Typora and handled by Prism.js
 
-
-
 ## Say ‘Hello World’ in 28 Different Programming Languages
-
 
 Computers are dumb. They only do what they’re told. How do you tell a computer what to do? You use a programming language. The very first thing you’ll do when learning a new programming language is how to make the computer display “Hello, World”.
 
 There is no perfect programming language, they all offer something a little different, and there are hundreds of programming languages with new ones being created every day.
 
 Here is a selection of programming languages that have a place in the programming hall of fame. They’re all either used today or have contributed something to the art of computer languages.
-
-
 
 ### AppleScript
 
@@ -39,17 +34,6 @@ Used to interact with and manage Linux and Unix system at the command line.
 #!/bin/bash
 STR="Hello World!"
 echo $STR
-```
-
-### BASIC
-
-Basic was first released in 1964 and reached its heyday in the early 80s, when computers were starting to enter the small office and the home. You were expected to write your own software and the large majority of computers shipped with some version of BASIC. It hit the sweet spot of being easy to learn but lean enough to run on this underpowered hardware.
-
-There are a huge number of BASIC variants, Visual Basic was a variation that was very popular on Windows in the 90s. This was replaced by Visual Basic .NET (now called just Visual Basic) but was quite different from the earlier versions. Visual Basic is still widely used.
-
-```basic
-10 PRINT "Hello, World!"
-20 END
 ```
 
 ### C
@@ -83,22 +67,6 @@ int main()
 }
 ```
 
-### C#
-
-Created when Microsoft built their .Net virtual machine. C# has become Microsoft premier programming language.
-
-```c#
-using System;
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello, world!");
-    }
-}
-```
-
 ### Caml (Ocaml)
 
 A functional programming focused language in the ML family of languages. It’s used for a number of smaller projects at Facebook. The compiler for Facebook’s Hack language was written in OCaml.
@@ -125,34 +93,6 @@ main() {
 }
 ```
 
-### Delphi
-
-Delphi was really a rapid application development (RAD) tool that used the Object Pascal language. In the mid- to late 90s, it was beloved by many programmers for writing Windows programmes. It’s no longer used, but still loved.
-
-```pascal
-procedure TForm1.ShowAMessage;
-begin
-  ShowMessage('Hello World!');
-end;
-```
-
-### Eiffel
-
-The language goes hand-in-hand with a way of writing software called the Eiffel Method. Eiffel introduced the concept of “design by contract” which is now used in many other languages.
-
-```eiffel
-class
-    HELLO_WORLD
-create
-    make
-feature
-    make
-        do
-            print ("Hello, world!%N")
-        end
-end
-```
-
 ### Erlang
 
 Designed to work in a distributed way to provide real-time processing and high availability. Popular for phone systems but not well-know until it was used for CouchDB, the project that was the catalyst for the NoSQL movement.
@@ -165,18 +105,11 @@ Designed to work in a distributed way to provide real-time processing and high a
 ```
 
 ### Elixir
+
 While Erlang is great at a technical level, programmers find it hard to work with. Elixir uses Erlang’s technology while providing an easier experience for programmers.
 
 ```elixir
 IO.puts "Hello World!"
-```
-
-### F#
-A functional focused programming language that runs on the .NET framework.
-
-```F#
-open System
-Console.WriteLine("Hello World!")
 ```
 
 ### Fortran
@@ -221,7 +154,6 @@ module Main where
 main :: IO ()
 main = putStrLn "Hello, World!"
 ```
-
 
 ### Java
 
@@ -273,29 +205,6 @@ Not so much a language (the language used is JavaScript) but a runtime environme
 console.log("Hello World!");
 ```
 
-### Objective-C
-
-An extension of C that adds Smalltalk like messaging. Used by Apple in writing macOS and iOS.
-
-```objective-c
-main()
-{
-  puts("Hello World!");
-  return 0;
-}
-```
-
-### Pascal
-
-A popular language in the 80s and 90s especially for teaching programming. It evolved a great deal and was also the language used in the Delphi RAD toolset.
-
-```pascal
-program HelloWorld(output);
-begin
-  Write('Hello, world!')
-end.
-```
-
 ### Perl
 
 Perl is very powerful for text processing. A popular option for creating websites in the early days of dynamic websites.
@@ -306,10 +215,10 @@ print "Hello, World!\n";
 
 ### PHP
 
-PHP is the most popular language for building the backend of websites. It’s what Facebook and WordPress are written in. Facebook decided to create their own dialect of PHP called [Hack](https://en.wikipedia.org/wiki/Hack_(programming_language)).
+PHP is the most popular language for building the backend of websites. It’s what Facebook and WordPress are written in. Facebook decided to create their own dialect of PHP called [Hack](<https://en.wikipedia.org/wiki/Hack_(programming_language)>).
 
 ```php
-<?php 
+<?php
 echo "Hello, World";
 ```
 
@@ -406,13 +315,11 @@ Designed in Microsoft, it’s a dialect of JavaScript that adds strict rules to 
 console.log("Hello World!");
 ```
 
-
-
 ## Prism.js Plugin Tests
 
 ### Line Numbers
 
-Example: 
+Example:
 
 See the last example (JSONP highlight) to which the line numbers classes have been added...
 
@@ -436,19 +343,19 @@ CSS Example
 @import url(http://fonts.googleapis.com/css?family=Arvo);
 
 @font-face {
-	src: url(http://lea.verou.me/logo.otf);
-	font-family: 'LeaVerou';
+  src: url(http://lea.verou.me/logo.otf);
+  font-family: "LeaVerou";
 }
 
 /*
  Shared styles
  */
- 
+
 section h1,
 #features li strong,
 header h2,
 footer p {
-	font: 100% Rockwell, Arvo, serif;
+  font: 100% Rockwell, Arvo, serif;
 }
 ```
 
@@ -466,7 +373,6 @@ Please note that the files are fetched with XMLHttpRequest. This means that if t
 
 > Since this site compiles everything into a dist folder a working example is not included. But it does work...
 
-
 ### JSONP Highlight
 
 Use the `data-jsonp` attribute on `<pre>` elements, like so:
@@ -474,8 +380,8 @@ Use the `data-jsonp` attribute on `<pre>` elements, like so:
 ```html
 <pre
   class="language-javascript"
-  data-jsonp="https://api.github.com/repos/leaverou/prism/contents/prism.js">
-</pre>
+  data-jsonp="https://api.github.com/repos/leaverou/prism/contents/prism.js"
+></pre>
 ```
 
 Don't specifiy the `callback` query parameter in the URL; this will be added automatically. If the API expects a different callback parameter name however, use the `data-callback` parameter to specify the name:
@@ -494,7 +400,7 @@ The following JSONP APIs are automatically detected and parsed:
 
 If you need to do your own parsing, you can hook your your own data adapters in two ways:
 
-1. Supply the `data-adapter` parameter on the `<pre>` element. This must be the name of a globally defined function. The plugin will use *only* this adapter to parse the response.
+1. Supply the `data-adapter` parameter on the `<pre>` element. This must be the name of a globally defined function. The plugin will use _only_ this adapter to parse the response.
 2. Register your adapter function by calling `Prism.plugins.jsonphighlight.registerAdapter(function(rsp) { … })`. It will be added to the list of inbuilt adapters and used if no other registered adapater (e.g. GitHub/Bitbucket) can parse the response.
 
 In either case, the function must accept at least a single parameter (the JSONP response) and returns a string of the content to highlight. If your adapter cannot parse the response, you must return `null`. The DOM node that will contain the highlighted code will also be passed in as the second argument, incase you need to use it to query any extra information (maybe you wish to inspect the `class` or `data-jsonp` attributes to assist in parsing the response).
@@ -504,18 +410,17 @@ The following example demonstrates both methods of using a custom adapter, to si
 ```html
 <!-- perhaps this is in a .js file elsewhere -->
 <script>
-	function dump_json(rsp) {
-		return "using dump_json: " + JSON.stringify(rsp,null,2);
-	}
+  function dump_json(rsp) {
+    return "using dump_json: " + JSON.stringify(rsp, null, 2);
+  }
 </script>
 
 <!-- … include prism.js … -->
 <script>
-	Prism.plugins.jsonphighlight.registerAdapter(function(rsp) {
-		return "using registerAdapter: " + JSON.stringify(rsp,null,2);
-	})
+  Prism.plugins.jsonphighlight.registerAdapter(function(rsp) {
+    return "using registerAdapter: " + JSON.stringify(rsp, null, 2);
+  });
 </script>
-
 ```
 
 And later in your HTML:
@@ -526,11 +431,9 @@ And later in your HTML:
 
 <!-- using whatever data adapters are available -->
 <pre class="language-javascript" data-jsonp="…"></pre>
-
 ```
 
-Finally, unlike like the [File Highlight](http://prismjs.com/plugins/file-highlight/index.html) plugin, you *do* need to supply the appropriate `class` with the language to highlight. This could have been auto-detected, but since you're not actually linking to a file it's not always possible (see below in the example using GitHub status). Furthermore, if you're linking to files with a `.xaml` extension for example, this plugin then needs to somehow map that to highlight as `markup`, which just means more bloat. You know what you're trying to highlight, just say so :)
-
+Finally, unlike like the [File Highlight](http://prismjs.com/plugins/file-highlight/index.html) plugin, you _do_ need to supply the appropriate `class` with the language to highlight. This could have been auto-detected, but since you're not actually linking to a file it's not always possible (see below in the example using GitHub status). Furthermore, if you're linking to files with a `.xaml` extension for example, this plugin then needs to somehow map that to highlight as `markup`, which just means more bloat. You know what you're trying to highlight, just say so :)
 
 #### Caveat for Gists
 
@@ -549,4 +452,3 @@ There's a bit of a catch with gists, as they can actually contain multiple files
 Prism.js from github repo:
 
 <pre class="line-numbers language-javascript" data-jsonp="https://api.github.com/repos/PrismJS/prism/contents/plugins/jsonp-highlight/prism-jsonp-highlight.js"> </pre>
-
