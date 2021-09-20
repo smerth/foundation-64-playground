@@ -17,7 +17,7 @@
     "what-input": "^5.1.3",
     "handlebars-helpers": "^0.10.0",
     "mixitup": "^3.3.1",
-    "prismjs": "^1.16.0"
+    "prismjs": "^1.25.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
